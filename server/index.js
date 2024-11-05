@@ -8,8 +8,11 @@ const messageRouter = require("./routes/messageRoute");
 const { server, socketServer } = require("./socket/socket");
 const bodyParser = require('body-parser');
 const cloudinary = require('cloudinary').v2;
+const path = require('path');
 
 dotenv.config();
+
+const _dirname = path.resolve();
 
 // Connect to the database
 connectDatabase();
@@ -36,6 +39,11 @@ server.use(cookieParser());
 // Routes
 server.use("/api/v1/user", userRouter.router);
 server.use("/api/v1/message", messageRouter.router);
+
+server.use(express.static(path.join(_dirname, "/client/dist")));
+server.get('*', (_,res) => {
+    res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
+});
 
 server.get("/", (req, res) => {
     res.send("Hello World");

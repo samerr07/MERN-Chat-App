@@ -17,7 +17,7 @@ const useGetMessages = ()=>{
                 axios.defaults.withCredentials = true;
                 const res = await axios.get(`${BASE_URL}/message/getMessage/${selectedUser?._id}`)
 
-                console.log(res?.data?.conversation)
+                
                 dispatch(setMessages(res?.data?.conversation?.messages))
                 // dispatch(setOtherUser(res?.data?.otherUsers))
             }catch(err){  
