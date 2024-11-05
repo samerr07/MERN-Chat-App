@@ -9,7 +9,7 @@ const socketServer = http.createServer(server);
 
 const io = new Server(socketServer,{
     cors:{
-        origin:true,
+        origin:"https://mern-chat-app-1-4cmn.onrender.com",
         methods:['GET', 'POST'],
     }
 })

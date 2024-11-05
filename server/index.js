@@ -26,7 +26,7 @@ cloudinary.config({
 
 // Middlewares
 const corsOptions = {
-    origin: true, // specify your frontend domain here
+    origin: "https://mern-chat-app-1-4cmn.onrender.com", // specify your frontend domain here
     credentials: true, // this allows the server to accept cookies from the origin
 };
 
