@@ -1,6 +1,11 @@
 # MERN Chat Application
 
+## Live Demo : https://mern-chat-app-1-4cmn.onrender.com
+## Youtube Demo : https://youtu.be/Rz7i6LnA13g
+
 ## Overview
+![Screenshot (11)](https://github.com/user-attachments/assets/c3bb797e-b4c6-4535-a85f-fdfc62193c21)
+
 This is a real-time chat application built using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to send text messages, share images, and communicate in real time. The application also features user authentication using JSON Web Tokens (JWT).
 
 ## Features
@@ -17,6 +22,12 @@ This is a real-time chat application built using the MERN (MongoDB, Express, Rea
 - **Authentication**: JSON Web Token (JWT)
 - **Real-Time Communication**: Socket.IO
 - **Media Storage**: Cloudinary
+  
+
+![Screenshot (10)](https://github.com/user-attachments/assets/3c8eeb60-b3c2-411e-8579-7f96ebf225d2)
+![Screenshot (8)](https://github.com/user-attachments/assets/f51b92df-1917-4363-a439-fbe5a7fda230)
+![Screenshot (10)](https://github.com/user-attachments/assets/9b1f7081-ebe3-4501-8154-bf4e7d308179)
+![Screenshot (9)](https://github.com/user-attachments/assets/93ab9ece-763c-490a-9079-331587568787)
 
 ## Usage
 
